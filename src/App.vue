@@ -3,7 +3,7 @@
         <canvas id="cv" ref="cv">BAD APPLE</canvas>
         <div id="binaryOutput"></div>
         <video id="video" ref="myVideo" controls @timeupdate="capturePic" @pause="pauseVideo">
-            <source src="./source/badapple.mp4"/>
+            <source src="./source/badapple.mp4" type="video/mp4">
         </video>
         <div id="txt" ref="render"></div>
     </div>
@@ -99,9 +99,9 @@
     }
 </script>
 
-<style>
+<style type="text/css">
     #app {
-        font-family: 'simsun';
+        font-family: simsun,serif;
         text-align: center;
         color: #2c3e50;
         margin-top: 60px;
